@@ -1,0 +1,25 @@
+.header{
+    background-color: black; 
+    width: 100%; 
+    margin-top: -10px; 
+    height: 100%;
+  }
+  .position{
+    margin-top: 0px;
+    margin-left: -100%;
+    margin-right: -100%;
+  }
+  .middle{
+    height: 60px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  //for footer
+  .bottom{
+    
+    position:absolute;
+    bottom:0;
+   }
+  
