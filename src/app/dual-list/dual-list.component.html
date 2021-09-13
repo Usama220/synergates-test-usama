@@ -1,23 +1,49 @@
 <div class="container">
     <div class="row">
+        <div class="col-sm-6 ">
+            <button type="button" class="btn btn-primary st" (click)="moveToTheRight()">Add To Selected User
+                List</button>
+        </div>
+        <div class="col-sm-6 ">
+            <button type="button" class="btn btn-primary st" (click)="moveToTheLeft()">Remove From Selected User
+                List</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
         <div class="col-sm-6">
-            <ul class="list-group">
-                <li class="list-group-item active" aria-current="true">An active item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item">And a fifth one</li>
+            <ul class="list-group" *ngFor="let child of userInView" name="userInGroup">
+                <li class="list-group-item {{isInActiveItems(child) ? 'active' : ''}}"
+                    (click)="toggleActiveItem(child)">
+                    {{child.value}}</li>
             </ul>
         </div>
         <div class="col-sm-6">
-            <ul class="list-group">
-                <li class="list-group-item active" aria-current="true">An active item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item">And a fifth one</li>
+            <ul class="list-group" *ngFor="let child of userNotinView" name="userNotInGroup">
+                <li class="list-group-item {{isInActiveItems(child) ? 'active' : ''}}"
+                    (click)="toggleActiveItem(child)">
+                    {{child.value}}</li>
+
             </ul>
         </div>
 
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row" style="margin-top: 30px;">
+
+        <div class="col-sm-6 ">
+            <button type="button" class="btn btn-primary st" (click)="showCount()">Count Selected User</button>
+        </div>
+
+        <div class="col-sm-6">
+            <input style="width: 30%;
+            height: 70%;" name="subject" disabled [(ngModel)]="totalSelectedUsers">
+        </div>
     </div>
 </div>

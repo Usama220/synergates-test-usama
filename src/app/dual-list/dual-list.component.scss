@@ -1,0 +1,26 @@
+.st{
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+input {
+    width: 10%;
+    float: right;
+    height: 25px;
+    margin-top: 5px;
+    text-align: right;
+    text-indent: 5px;
+    font-size: 12.6pt;
+    border-radius: 5px;
+    border: solid 1.5px #D3D3D3;
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+  }
+  input[type=text]:hover{
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+  }
+  input[type=text]:focus {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+  }

@@ -1,4 +1,30 @@
 export class Countries {
+    people:any =[
+        {
+          "name":"Usama Ali"
+        },
+        {
+          "name":"Shakil Momin"
+        },
+        {
+          "name":"Zeeshan Khan"
+        },
+        {
+          "name":"Furqaan"
+        },
+        {
+          "name":"Abdul Saboor"
+        },
+        {
+          "name":"Abdul Wahab"
+        },
+        {
+          "name":"Faisal Nizam"
+        },
+        {
+          "name":"Sara Khan"
+        },
+      ] 
     public constructor(
         countryName: any,
         countryCurrency: any,
